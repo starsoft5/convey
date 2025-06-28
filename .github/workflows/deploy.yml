@@ -8,6 +8,7 @@ on:
 
 jobs:
   build-and-deploy:
+    SCM_DO_BUILD_DURING_DEPLOYMENT= FALSE
     # Prevent recursive deploys if GitHub Actions itself pushes something
     if: github.actor != 'github-actions'
     runs-on: ubuntu-latest
